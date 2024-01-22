@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "survival-analysis"
+version = "0.1.0"
+description = "Análise de sobrevida de dados públicos da UE"
+authors = ["Daniel Soares <danielsoares.data@outlook.com>"]
+readme = "README.md"
+packages = [{include = "survival_analysis"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+pandas = "^2.2.0"
+
+
+[tool.poetry.group.dev.dependencies]
+ipykernel = "^6.29.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
