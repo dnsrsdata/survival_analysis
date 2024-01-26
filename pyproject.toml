@@ -1,14 +1,18 @@
 [tool.poetry]
 name = "survival-analysis"
 version = "0.1.0"
-description = "Análise de sobrevida de dados públicos da UE"
+description = "Análise de sobrevida de clientes de uma Telecom"
 authors = ["Daniel Soares <danielsoares.data@outlook.com>"]
+license = "MIT"
 readme = "README.md"
 packages = [{include = "survival_analysis"}]
 
 [tool.poetry.dependencies]
 python = "^3.10"
 pandas = "^2.2.0"
+plotly = "^5.18.0"
+nbformat = "^5.9.2"
+scikit-survival = "^0.22.2"
 
 
 [tool.poetry.group.dev.dependencies]
