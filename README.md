@@ -21,8 +21,11 @@ um serviço de telecomunicações. O dataset contém 7043 linhas e 21 colunas.
 
 ### Métricas de avaliação
 
-Como o interesse é a probabilidade de sobrevida com o decorrer do tempo, a 
-métrica de avaliação será a **dynamic AUC**.
+Para avaliar o nosso modelo, iremos usar o **c-index**. Essa métrica vai de 0 a 
+1, onde quanto mais próximo de 1, melhor. O c-index é uma métrica que avalia a
+capacidade do modelo de prever a ordem de ocorrência dos eventos. Por exemplo,
+se o modelo previu que o cliente A irá cancelar o serviço antes do cliente B,
+e isso realmente aconteceu, o modelo ganha pontos. Caso contrário, ele perde.
 
 ### Melhorias
 
