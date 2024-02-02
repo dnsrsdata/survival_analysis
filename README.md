@@ -29,13 +29,62 @@ e isso realmente aconteceu, o modelo ganha pontos. Caso contrário, ele perde.
 
 ### Melhorias
 
+[⌛] Criar uma interface Streamlit para facilitar o entendimento do retorno
+financeiro do modelo dado diferentes taxas de retenção.
 
 ### Instruções para execução do projeto
 
+Esse projeto foi desenvolvido usando o Python 3.10.12. Para executar o projeto,
+siga os passos abaixo:
+
+1. Clone o repositório:
+```sh
+git clone https://github.com/dnsrsdata/survival_analysis
+```
+2. Instale o poetry:
+```sh
+pip install poetry
+```
+3. Instale as dependências do projeto:
+```sh
+poetry install
+```
+4. Execute os notebooks
 
 ### Descrição dos arquivos
 
-
+    - data
+    |- processed
+    | |- Processed_Telecom_Data.csv  # Dados transformados e limpos
+    |- raw
+    | |- WA_Fn-UseC_-Telco-Customer-Churn.xls  # Dados brutos referentes ao churn de clientes
+    |
+    - images
+    |- distribuicaoExpectativas.png  # Imagem contendo a distribuição das expectativas de permanência de cada cliente
+    |- kaplanmeiercontratos.png  # Gráfico de linhas contendo a probabilidade de permanência dos clientes ao longo do tempo dado os tipos de contrato
+    |- kaplanmeierdependentes.png  # Gráfico de linhas contendo a probabilidade de permanência dos clientes ao longo do tempo dado se o cliente tem dependentes ou não
+    |- kaplanmeiergeneros.png  # Gráfico de linhas contendo a probabilidade de permanência dos clientes ao longo do tempo dado o gênero do cliente
+    |- kaplanmeierparceiros.png  # Gráfico de linhas contendo a probabilidade de permanência dos clientes ao longo do tempo dado se o cliente tem parceiros ou não
+    |- kaplanmeierpsenior.png  # Gráfico de linhas contendo a probabilidade de permanência dos clientes ao longo do tempo dado se o cliente é sênior ou não
+    |- probabilidadesdesobrevidageral.png  # Gráfico de linhas contendo a probabilidade de permanência dos clientes ao longo do tempo
+    |
+    - models
+    |- modelo_cox.pkl  # Modelo treinado
+    |
+    - notebooks
+    |- EDA.ipynb  # Notebook contendo a preparação dos dados
+    |- Survival_Analysis.ipynb  # Notebook contendo a experimentação dos modelos
+    |
+    - Relatório
+    |- Analise_de_sobrevivencia.pdf  # Apresentação ppt contendo partes da análise de sobrevivência e EDA
+    |
+    - .gitignore  # Arquivo contendo as folders para o git ignorar
+    - poetry.lock # Arquivo contendo as versões dos pacotes e suas dependências
+    - pyproject.toml  # Arquivo contendo as dependências do projeto
+    - README.md  # Arquivo contando informações do projeto
 
 ### Resultados
 
+Foi criado um modelo que prevê a expectativa de permanência do cliente. Além disso,
+soluções para os problemas encontrados foram propostas. O resumo dos resultados pode
+ser acessado no relatório em PDF na folder **Relatórios**.
