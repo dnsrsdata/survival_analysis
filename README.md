@@ -75,7 +75,7 @@ poetry install
     |- EDA.ipynb  # Notebook contendo a preparação dos dados
     |- Survival_Analysis.ipynb  # Notebook contendo a experimentação dos modelos
     |
-    - Relatório
+    - relatorio
     |- Analise_de_sobrevivencia.pdf  # Apresentação ppt contendo partes da análise de sobrevivência e EDA
     |
     - .gitignore  # Arquivo contendo as folders para o git ignorar
